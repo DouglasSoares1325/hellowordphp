@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+
+    <!-- CSS Externo -->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de dados</h1>
+        <hr />
+        <form action="php/dados.php" method="POST">
+            <label>Primeiro nome:</label><br />
+            <input type="text" name="nome" placeholder="Informe seu primeiro nome" /><br /><br/>
+            <label>Sobrenome:</label><br />
+            <input type="text" name="sobrenome" placeholder="Informe seu sobrenome" /><br /><br/>
+            <label>E-mail:</label><br />
+            <input type="email" name="email" placeholder="usuario@servidor.com" /><br /><br/>
+            <label>Gênero:</label><br />
+            <input type="radio" name="genero" value="Masculino" /><span>Masculino</span><br />
+            <input type="radio" name="genero" value="Feminino" /><span>Feminino</span><br />
+            <input type="radio" name="genero" value="Outro" /><span>Outro</span><br />
+            <label>Escolaridade:</label><br />
+            <select name="escolaridade">
+                <option value="Fundamental Incompleto">Fundamental Incompleto</option>
+                <option value="Fundamental completo">Fundamental completo</option>
+                <option value="Médio incompleto">Médio incompleto</option>
+                <option value="Médio completo">Médio completo</option>
+                <option value="Superior incompleto">Superior incompleto</option>
+                <option value="Superior completo">Superior completo</option>
+                <option value="Pós-graduação">Pós-graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+            </select><br /><br />
+            <label>Índice de satisfação:</label><br />
+            <span>0</span>
+            <input type="range" name="nota" min="0" max="10" />
+            <span>10</span><br /><br />
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
